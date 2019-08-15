@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext } from 'react';
-import {Form, Grid, Container, Header,} from 'semantic-ui-react';
+import {Form, Grid, Container, Header, Card,} from 'semantic-ui-react';
 import styled from "styled-components"
 import axios from "axios";
 
@@ -17,7 +17,12 @@ const Skills = () => {
       <>
     <Header>
       PlaceHolder
-      {/* {skills.map((skills) => <Skill key={Skill.id} name={Skill.name} id={Skill.id} />)} */}
+      {skills.map( s => (
+
+        <Card.Header>
+          {s.name}
+        </Card.Header>
+        ))}
     </Header>
     
     </>

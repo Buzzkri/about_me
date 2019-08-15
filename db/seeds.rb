@@ -17,13 +17,15 @@ technical_skills = [
  [ "Scrum", 100 ]       
 ]
 
-a = Platform.create
 technical_skills.each do |name, score|
   techskill = Skill.create(
     name: name,
     score: score,
     description: nil
   )
+end
+
+  puts "data seeded"
 
   # soft_skills = [
   #   [ "Customer Service", 100 ],       
