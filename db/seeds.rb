@@ -1,7 +1,49 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+technical_skills = [
+ [ "Javascript", 100 ],       
+ [ "Ruby on Rails", 100 ],       
+ [ "SQL", 100 ],       
+ [ "graphQL", 100 ],       
+ [ "HTML", 100 ],       
+ [ "CSS", 100 ],       
+ [ "Database Design", 100 ],       
+ [ "API", 100 ],       
+ [ "React", 100 ],       
+ [ "jQuery", 100 ],       
+ [ "JSX", 100 ],       
+ [ "UX/UI", 100 ],       
+ [ "Java", 100 ],       
+ [ "Python", 100 ],       
+ [ "Agile", 100 ],       
+ [ "Scrum", 100 ]       
+]
+
+a = Platform.create
+technical_skills.each do |name, score|
+  techskill = Skill.create(
+    name: name,
+    score: score,
+    description: nil
+  )
+
+  soft_skills = [
+    [ "Customer Service", 100 ],       
+    [ "Project Management", 100 ],       
+    [ "Team Building", 100 ],       
+    [ "Leadership", 100 ],       
+    [ "Process Improvement", 100 ],       
+    [ "Quality Assurance", 100 ],       
+    [ "Database Design", 100 ],       
+    [ "API", 100 ],       
+    [ "Javascript", 100 ],       
+    [ "Javascript", 100 ],       
+    [ "Javascript", 100 ],       
+    [ "Javascript", 100 ],       
+   ]
+   
+   a = Platform.create
+   soft_skills.each do |name, score|
+     softskill = Skill.create(
+       name: name,
+       score: score,
+       description: nil
+     )

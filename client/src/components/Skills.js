@@ -1,7 +1,12 @@
 import React from "react";
+import { Header } from "semantic-ui-react";
 
 const Skills = () => (
-  <h1>Skills</h1>
+<>
+<Header>
+  Skills
+</Header>
+</>
 )
 
 export default Skills;

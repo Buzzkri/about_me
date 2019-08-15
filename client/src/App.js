@@ -10,16 +10,18 @@ import Navbar from './components/Navbar';
 import NoMatch from './components/NoMatch';
 
 const App = () => (
-  <Switch>
+    <>
     <Navbar />
+  <Switch>
       <Route exact path ='/' component={Home} />
-      <Route exact path ='/components/About' component={About} />
-      <Route exact path ='/components/Contact' component={Contact} />
-      <Route exact path ='/components/Hobbies' component={Hobbies} />
-      <Route exact path ='/components/Portfolio' component={Portfolio} />
-      <Route exact path ='/components/Skills' component={Skills} />
+      <Route exact path ='/about' component={About} />
+      <Route exact path ='/contact' component={Contact} />
+      <Route exact path ='/hobbies' component={Hobbies} />
+      <Route exact path ='/portfolio' component={Portfolio} />
+      <Route exact path ='/skills' component={Skills} />
       <Route component={NoMatch} />
   </Switch>
+  </>
 )
 
 export default App;
