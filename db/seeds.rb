@@ -25,25 +25,24 @@ technical_skills.each do |name, score|
     description: nil
   )
 
-  soft_skills = [
-    [ "Customer Service", 100 ],       
-    [ "Project Management", 100 ],       
-    [ "Team Building", 100 ],       
-    [ "Leadership", 100 ],       
-    [ "Process Improvement", 100 ],       
-    [ "Quality Assurance", 100 ],       
-    [ "Database Design", 100 ],       
-    [ "API", 100 ],       
-    [ "Javascript", 100 ],       
-    [ "Javascript", 100 ],       
-    [ "Javascript", 100 ],       
-    [ "Javascript", 100 ],       
-   ]
+  # soft_skills = [
+  #   [ "Customer Service", 100 ],       
+  #   [ "Project Management", 100 ],       
+  #   [ "Team Building", 100 ],       
+  #   [ "Leadership", 100 ],       
+  #   [ "Process Improvement", 100 ],       
+  #   [ "Quality Assurance", 100 ],       
+  #   [ "Database Design", 100 ],       
+  #   [ "API", 100 ],       
+  #   [ "Javascript", 100 ],       
+  #   [ "Javascript", 100 ],       
+  #   [ "Javascript", 100 ],       
+  #   [ "Javascript", 100 ],       
+  #  ]
    
-   a = Platform.create
-   soft_skills.each do |name, score|
-     softskill = Skill.create(
-       name: name,
-       score: score,
-       description: nil
-     )
+  #  soft_skills.each do |name, score|
+  #    softskill = Skill.create(
+  #      name: name,
+  #      score: score,
+  #      description: nil
+  #    )
