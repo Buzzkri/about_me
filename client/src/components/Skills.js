@@ -26,7 +26,7 @@ const Skills = () => {
         </Card.Content>
         <Card.Content extra>
         <Button as={Link} to={`/skills/${s.id}`} color='blue'>
-            View
+            ViewWEEE
           </Button>
         </Card.Content>
       </Card>
